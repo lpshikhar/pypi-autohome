@@ -57,7 +57,7 @@ def main():
     print("materialdesignicons.com icon updater")
     Rooms(Room{ name: board; motion: true; thermostat: therm01; motion-sensor: mot01}
         Room{ name: home; motion: true; thermostat: therm02; motion-sensor: mot02}
-        Room{ name: server; motion: true; thermostat: therm03; motion-sensor: mot03}
+        Room{ name: server; motion: false; thermostat: therm03; motion-sensor: mot03}
         Room{ name: board; motion: true; thermostat: therm04; motion-sensor: mot04})
     remote_url = get_remote_version()
     source = clean_component(requests.get(remote_url).text)
